@@ -1,0 +1,196 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a flex column layout for a container */
+.flex-col {
+display: flex;
+flex-direction: column;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  /* Set background color and text color */
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+/* Style the logo within the navigation bar */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the logo image */
+.logo {
+  /* Adjust the width, height, and margin */
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Style the text next to the logo */
+.navbar-logo h4 {
+  font-size: 30px;
+  font-weight: bold; 
+}
+
+/* Style for the "Favourites" button */
+.fav-btn {
+  /* Button background and text color */
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Style the heart icon inside the button */
+.fa-heart {
+  color: #ff0000;
+  margin-right: 5px;
+}
+
+/* Add a hover effect for the button */
+.fav-btn:hover {
+  background-color: #ff0000;
+  box-shadow: 0px 0px 9px 0px white;
+}
+
+
+/* Style for a container with a background image */
+.container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+/* Style for an image inside the container */
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Place the image behind other content */
+}
+
+/* Style for a data container */
+#data-container {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for a search icon box */
+.search-icon-box {
+  margin-left: 30%;
+  background-color: #0078d4;
+  opacity: 0.6;
+  padding: 5px;
+  box-shadow: 0px 0px 9px 0px white;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the search icon */
+.fa-magnifying-glass {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Style for the search input field */
+#Hero {
+  box-shadow: 0px 0px 7px 0px white;
+  width: 80vh;
+  background-color: #0078d4;
+  opacity: 0.6;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+/* Style for a list of search results */
+#searchResult {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+/* Style for each search result item */
+.search-item {
+  background-color: #0078d4;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+/* Style for an unordered list */
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: auto;
+  height: 60vh;
+  width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  list-style: none;
+}
+
+/* Modify the CSS for list items */
+ul li {
+  width: 80%;
+  padding-right: 20%;
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  border: 3px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Style for the "Delete Favorite" and "Add Favorite" links */
+#delFav {
+  color: red;
+  font-size: 25px;
+}
+
+#delFav:hover {
+  cursor: pointer;
+}
+
+#addFav:hover {
+  cursor: pointer;
+}
+
+#addFav {
+  font-size: 25px;
+  color: lightgray;
+}
+
+/* Style for a link within a search item */
+.search-item a {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}

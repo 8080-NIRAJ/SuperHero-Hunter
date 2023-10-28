@@ -1,0 +1,92 @@
+
+/* Reset some default styles for the HTML and body elements */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Set a background image for the container */
+#background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind other content */
+}
+
+/* Container styles */
+#container {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    margin-top: 20px; 
+}
+
+/* Button styles */
+#btn {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#btn a {
+    text-decoration: none;
+    background-color: #007BFF; 
+    color: #fff; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    display: inline-block; 
+}
+
+#btn a:hover {
+    background-color: red; 
+}
+
+/* Favorite Hero Container */
+#favourite-hero {
+    border: 2px solid black; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Individual Hero Card */
+#favourite-hero div {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #007BFF; 
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+}
+
+/* Image styling  */
+.favourite-Img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+/* Remove Button styling */
+.fav-remove {
+    padding: 5px 10px;
+    border: 2px solid #007BFF; 
+    border-radius: 5px; 
+    background-color: #007BFF; 
+    color: black; 
+}
+
+.fav-remove:hover {
+    background-color: red; 
+}

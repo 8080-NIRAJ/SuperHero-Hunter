@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Hunter</title>
+    
+    <!-- Link to Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link to your custom CSS stylesheet -->
+    <link rel="stylesheet" href="./stylesheet/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="display navbar">
+        <div class="display navbar-logo">
+          <!-- Logo and site title -->
+          <img class="logo" src="./img/logo.gif" alt="SuperHero Hunter">
+          <h4>SuperHero Hunter</h4>
+        </div>
+
+        <!-- Favourites Button -->
+        <div class="display">
+            <a class="display" href="./favourite.html">
+                 <button class="btn fav-btn"> <i class="fa-regular fa-heart fa-beat-fade"></i>&nbsp; Favourites</button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Background Image -->
+        <img src="./img/background.jpg" alt="Background Image">
+        
+        <!-- Search Input Box -->
+        <div id="data-container">
+          <div class="search-icon-box"><i class="fa-solid fa-magnifying-glass fa-beat"></i></div>
+          <input type="search" name="Hero" id="Hero" placeholder="Search...">
+        </div>
+        
+        <!-- Search Results List -->
+        <ul class="flex-col" id="searchResult">
+        </ul>
+    </div>
+
+    <!-- Link to your custom JavaScript script -->
+    <script src="./scriptsheet/index.js"></script>
+</body>
+</html>
+
